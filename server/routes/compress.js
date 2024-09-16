@@ -7,6 +7,7 @@ const router = express.Router();
 router.post("/compress", express.json(), (req, res) => {
   const { imagePath, quality } = req.body;
 
+  // if imagePath is not null
   if (!imagePath || !quality) {
     return res.status(400).json({ success: 0, message: "Invalid parameters" });
   }
