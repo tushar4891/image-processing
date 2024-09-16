@@ -1,0 +1,20 @@
+input[type="range"]::-webkit-slider-runnable-track {
+  /*  styling the track  */
+  height: 8px;
+  background: #ecc94b;
+
+  border-radius: 10px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  /* removing default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+  /* creating a custom design */
+  height: 18px;
+  width: 18px;
+  background-color: #fff;
+  border-radius: 50%;
+  /* border: 2px solid rgb(15, 53, 242); */
+  border: 2px solid #fff;
+}
