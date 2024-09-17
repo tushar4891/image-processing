@@ -9,7 +9,8 @@ const port = process.env.PORT || 4000;
 
 app.use(
   cors({
-    origin: "http://localhost:3000", // Allow only this origin
+    //origin: "http://localhost:3000", // Allow only this origin
+    origin: "https://image-processing-front-end.onrender.com",
   })
 );
 // storage engine
