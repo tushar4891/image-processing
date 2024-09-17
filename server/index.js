@@ -5,6 +5,8 @@ const path = require("path");
 const sharp = require("sharp");
 const cors = require("cors");
 
+const port = process.env.PORT || 4000;
+
 app.use(
   cors({
     origin: "http://localhost:3000", // Allow only this origin
@@ -82,6 +84,6 @@ function errHandler(err, req, res, next) {
 }
 
 app.use(errHandler);
-app.listen(4000, () => {
+app.listen(port, () => {
   console.log("server up and running at 4000 ");
 });
