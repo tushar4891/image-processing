@@ -62,7 +62,7 @@ app.post("/upload", upload.single("profile"), (req, res) => {
   // Respond with uploaded image path so frontend can use this in further operations
   res.json({
     success: true,
-    profile_url: `http://localhost:4000/profile/${req.file.filename}`,
+    profile_url: `https://image-processing-4.onrender.com/profile/${req.file.filename}`,
     image_path: imagePath, // Send the image path to be used by other routes
   });
 });
