@@ -28,7 +28,7 @@ sharp(imagePath)
       parentPort.postMessage({
         success: true,
         message: "Low-quality preview ready",
-        preview_url: `http://localhost:4000/profile/${path.basename(
+        preview_url: `https://image-processing-4.onrender.com/profile/${path.basename(
           lowQualityOutputPath
         )}`,
       });
