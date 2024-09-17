@@ -29,7 +29,7 @@ router.post("/compress", express.json(), (req, res) => {
       res.json({
         success: true,
         message: "Image compressed",
-        modified_url: `http://localhost:4000/profile/compress_${path.basename(
+        modified_url: `https://image-processing-4.onrender.com/profile/compress_${path.basename(
           imagePath
         )}`,
       });
